@@ -1,4 +1,4 @@
-# Final_Project
+# Final_Project 
 
 # Game_name
 
@@ -13,4 +13,7 @@
 
 # Created_By
 
-
+# References
+- Assets sources
+- Music sources
+- Other sources
