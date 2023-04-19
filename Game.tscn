@@ -5,6 +5,12 @@
 
 [node name="Game" type="Node2D"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1135.0
+margin_bottom = 608.0
+rect_scale = Vector2( 0.903201, 1 )
+color = Color( 0.537255, 0.537255, 0.537255, 1 )
+
 [node name="EnemyType1" parent="." instance=ExtResource( 2 )]
 position = Vector2( 628, 217 )
 

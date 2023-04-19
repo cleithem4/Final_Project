@@ -12,6 +12,6 @@ func get_input():
 
 
 #Process the game
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
-	move_and_slide(velocity) * delta
+	move_and_slide(velocity)
