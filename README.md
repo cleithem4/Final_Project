@@ -2,9 +2,10 @@
 
 # Game_name
 
-# Bugs
+# Bugs/Fixed
+- Bugs
 
-# Fixed
+- Fixed
 
 # Date_created
 
