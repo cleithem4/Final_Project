@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Enemy/EnemyType1.gd" type="Script" id=1]
-[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Roof/roof_0000_Layer-1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/IMG_1816.PNG" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 17.5, 15 )
@@ -17,7 +17,7 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, 0.5 )
-scale = Vector2( 0.313726, 0.345238 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
