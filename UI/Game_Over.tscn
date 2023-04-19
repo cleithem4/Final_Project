@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sound_Effect/never-give-up-tatami-main-version-20276-02-06(muisc_during_game).mp3" type="AudioStream" id=1]
+[ext_resource path="res://UI/Game_Over.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Font/RussoOne-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[node name="Game_Over" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 163.0
+margin_bottom = -357.0
+custom_fonts/font = SubResource( 1 )
+text = "MISSION FAILED"
+align = 1
+
+[node name="Play" type="Button" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -122.0
+margin_right = 78.0
+margin_bottom = 40.0
+rect_scale = Vector2( 1.2, 1.2 )
+custom_fonts/font = SubResource( 2 )
+text = "TRY AGAIN"
+icon_align = 1
+
+[node name="Quit" type="Button" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -122.0
+margin_top = 100.0
+margin_right = 78.0
+margin_bottom = 140.0
+rect_scale = Vector2( 1.2, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "GIVE UP"
+icon_align = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[connection signal="pressed" from="ColorRect/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="ColorRect/Quit" to="." method="_on_Quit_pressed"]

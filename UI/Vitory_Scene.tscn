@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Font/RussoOne-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI/Vitory_Scene.gd" type="Script" id=2]
+[ext_resource path="res://Sound_Effect/never-give-up-tatami-main-version-20276-02-06(muisc_during_game).mp3" type="AudioStream" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[node name="Vitory_Scene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 163.0
+margin_bottom = -357.0
+custom_fonts/font = SubResource( 1 )
+text = "YOU SAVED US"
+align = 1
+
+[node name="Play" type="Button" parent="."]
+margin_left = 390.0
+margin_top = 300.0
+margin_right = 590.0
+margin_bottom = 340.0
+rect_scale = Vector2( 1.2, 1.2 )
+custom_fonts/font = SubResource( 2 )
+text = "TRY AGAIN"
+icon_align = 1
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 390.0
+margin_top = 400.0
+margin_right = 590.0
+margin_bottom = 440.0
+rect_scale = Vector2( 1.2, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "QUIT"
+icon_align = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
