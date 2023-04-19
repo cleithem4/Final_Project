@@ -6,5 +6,7 @@
 [node name="GameScene" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 604, 346 )
 
 [node name="EnemyType1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 942, 367 )
