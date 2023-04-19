@@ -4,14 +4,20 @@
 [ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0000_Layer-1.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 85, 42.5 )
+extents = Vector2( 10.5, 11 )
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( -9, -10 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.117647, 0.235294 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 0.5 )
+position = Vector2( 9.5, 10 )
 shape = SubResource( 1 )
