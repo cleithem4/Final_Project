@@ -1,7 +1,8 @@
 extends KinematicBody2D
 
 export var speed := 400
-
+export var health = 3
+export var attackDmg = 1
 
 var velocity = Vector2()
 

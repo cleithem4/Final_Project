@@ -1,7 +1,11 @@
 extends KinematicBody2D
 
 export var speed = 350
+export var health = 5
+export var attackDmg = 1
+
 var motion = Vector2.ZERO
+
 
 
 var player = null 
