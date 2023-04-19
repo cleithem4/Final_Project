@@ -7,7 +7,7 @@
 
 - Fixed
 
-# Date_created
+# Date_created/Date_finished
 
 # Feature
 
