@@ -1,3 +1,16 @@
 # Final_Project
 
-//Add info in here
+# Game_name
+
+# Bugs/Fixed
+- Bugs
+
+- Fixed
+
+# Date_created/Date_finished
+
+# Feature
+
+# Created_By
+
+
