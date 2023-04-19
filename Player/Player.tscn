@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0000_Layer-1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Objects/PNG_version_2/objects_house_0003_Layer-4.png" type="Texture" id=3]
+
+[ext_resource path="res://Assets/IMG_1814.PNG" type="Texture" id=2]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.5, 11 )
@@ -14,8 +15,10 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.117647, 0.235294 )
-texture = ExtResource( 2 )
+
+position = Vector2( 10, 10 )
+scale = Vector2( 0.5, 0.5 )
+
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 16, 6 )
@@ -23,4 +26,6 @@ scale = Vector2( 0.111328, 0.0664062 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+visible = false
+position = Vector2( 9.5, 10 )
+
