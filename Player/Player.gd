@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var speed := 400
+export var speed := 300
 export var health = 3
 export var attackDmg = 1
 
