@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Enemy/EnemyType1.gd" type="Script" id=1]
+[ext_resource path="res://EnemyType1/EnemyType1.gd" type="Script" id=1]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1818.PNG" type="Texture" id=2]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1817.PNG" type="Texture" id=3]
 
