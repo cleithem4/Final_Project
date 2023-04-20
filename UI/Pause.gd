@@ -2,7 +2,7 @@ extends Control
 
 
 func _ready():
-	pass
+	pause_mode = Node.PAUSE_MODE_PROCESS
 
 
 
