@@ -28,7 +28,7 @@ Date 4/20/23
 + Bullet deal damage on zombie
 + Audio for menu now auto play on press same for menu
 + Shooting now make bang sound
--                             - Jack -
+
 
 
 # Date_created/Date_finished
