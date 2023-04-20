@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1814.PNG" type="Texture" id=2]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1813.PNG" type="Texture" id=3]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1815.PNG" type="Texture" id=4]
+[ext_resource path="res://Assets/Sound_Effect/Rifle_Single_Shot.mp3" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=6]
 flags = 4
@@ -34,7 +35,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 9.5, 14 )
+extents = Vector2( 12, 13.5 )
 
 [node name="Player" type="KinematicBody2D"]
 rotation = 1.5708
@@ -46,7 +47,15 @@ frames = SubResource( 3 )
 animation = "Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -9.0718e-06, -0.5 )
 shape = SubResource( 1 )
 
 [node name="end_of_gun" type="Position2D" parent="."]
-position = Vector2( 20, 8.99993 )
+position = Vector2( 21, 8.99992 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -2.311
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
