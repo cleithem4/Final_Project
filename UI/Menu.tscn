@@ -5,3 +5,7 @@ anchor_right = 0.663
 anchor_bottom = 0.554
 margin_right = -0.500061
 margin_bottom = -0.200012
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
