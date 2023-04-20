@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Final_Project"
-run/main_scene="res://UI/Main_Menu.tscn"
+run/main_scene="res://GameScene.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -24,12 +24,6 @@ window/stretch/aspect="keep"
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
-
-[importer_defaults]
-
-mp3={
-"loop": false
-}
 
 [input]
 

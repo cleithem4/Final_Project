@@ -1,34 +1,29 @@
 # Final_Project 
 
 # ToDo
+- Make menu and ending game scene (win scene, lose scene, start scene, pause scene, how to play scene...etc)
+- Adding music to different UI scene
 - Adding TileMap with assets
 - Add wepons/health pack (Polymorphism weapon)
 - Create player UI 
 - Make weapons and healthpack spawn 
+- Make weapon shoot out beam or bullet
 - Adding enemy into game scene
 - Add score UI
+- Enemy deal damage within area
 - Spawn enemy (pseudo, if score < 100 spawn 2 enemy per desire time, if score >= 100 but <= 200 spawn 10 per desire time...patern)
 
 
 
 # Game_name
-- Reverse: 
---------------------------------
+- Title Game Here
+
 # Bugs/Fixed
 - Bugs
-+   Audio play too early
-+   Player can still go out of the map (need collision to stop from moving out of range)
+(input bugs if have any)
 
----------------------------------------------------------------------------------------------
 - Fixed
-+   Bullet now disapper when out of range
-+   Zombie now deal damage on Player
-+   Bullet don't destroy itself when go back ward
-+   Bullet deal damage on zombie
-+   Audio for menu now auto play on press same for menu
-+   Shooting now make bang sound
----------------------------------
-
+(input bugs that already fixed)
 
 # Date_created/Date_finished
 - Mar/18/23 created
@@ -49,14 +44,13 @@
 
 
 # References
-Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/mountaineer/dorisha
-License code: IEU4YBBXOEJDZSFU
-
-Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/tatami/never-give-up
-License code: YQEBRD0ZR4PAETJT
+(insert link where you get the asset, if you make it yourself then just put in your name)
 
 - Graphic assets by Arwyn Tuttle 
 - Music sources 
+
+  Music from #Uppbeat (free for Creators!):
+https://uppbeat.io/t/tatami/never-give-up
+License code: YQEBRD0ZR4PAETJT
+
 - Other sources 
