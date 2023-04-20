@@ -7,8 +7,8 @@
 [node name="GameScene" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1513.25, 812.25 )
-scale = Vector2( 2.65859, 3.1176 )
+position = Vector2( 2081.25, 1218.75 )
+scale = Vector2( 3.65947, 4.45477 )
 texture = ExtResource( 3 )
 
 [node name="EnemyType1" parent="." instance=ExtResource( 1 )]
@@ -18,3 +18,6 @@ scale = Vector2( 2, 2 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1110, 254 )
 scale = Vector2( 2, 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
