@@ -25,6 +25,7 @@ func _physics_process(_delta):
 	move_and_slide(velocity)
 	#Shoots bullet when space is pressed
 	if Input.is_action_just_pressed("shoot"):
+		#$AudioStreamPlayer.play()
 		var bullet = Bullet.instance()
 		var target = get_global_mouse_position()
 		bullet.global_position = end_of_gun.global_position
