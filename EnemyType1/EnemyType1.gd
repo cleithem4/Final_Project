@@ -31,7 +31,6 @@ func damage(dmg):
 	if health <= 0:
 		queue_free()
 
-
 func _on_AttackRange_body_entered(body):
 	if body.has_method("damage"):
 		body.damage(attackDmg)
