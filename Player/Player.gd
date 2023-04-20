@@ -19,6 +19,9 @@ func get_input():
 		$AnimatedSprite.play("Idle")
 	velocity = input_direction * speed
 	
+	if Input.is_action_just_pressed("shoot"):
+		$AudioStreamPlayer.play()
+	
 
 func shoot():
 	if Input.is_action_just_pressed("shoot"):

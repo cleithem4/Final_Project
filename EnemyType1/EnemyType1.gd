@@ -13,17 +13,18 @@ func _physics_process(_delta):
 	if player:
 		motion = position.direction_to(player.position) * speed 
 		look_at(player.position)
-		$AnimatedSprite.play("Walk")
 	motion = move_and_slide(motion)
 
 #Check if player collide or not
 func _on_Area2D_body_entered(body):
+	$Area2D/Moan.play()
+	$AnimatedSprite.play("Walk")
 	player = body
-
 
 func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
-	
+	$AnimatedSprite.play("Idle")
+
 
 #Zombie dies if health <= 0
 func damage(dmg):
@@ -32,6 +33,6 @@ func damage(dmg):
 		queue_free()
 
 func _on_AttackRange_body_entered(body):
-	$AttackRange/Moan.play()
 	if body.has_method("damage"):
+		$CollisionShape2D/Bite.play()
 		body.damage(attackDmg)
