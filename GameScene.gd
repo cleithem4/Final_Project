@@ -6,3 +6,4 @@ func _process(_delta):
 	elif $Player == null:
 		$AudioStreamPlayer.stop()
 		get_tree().change_scene("res://UI/Main_Menu.tscn")
+	
