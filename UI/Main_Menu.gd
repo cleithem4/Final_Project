@@ -2,7 +2,7 @@ extends Control
 
 func _on_Play_pressed():
 	
-	get_tree().change_scene("res://UI/Tutorial_Menu.tscn")
+	var _scene = get_tree().change_scene("res://UI/Tutorial_Menu.tscn")
 
 
 
