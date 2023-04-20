@@ -11,7 +11,7 @@ onready var end_of_gun = $end_of_gun
 func get_input():
 	rotation = get_global_mouse_position().angle_to_point(position)
 	var input_direction = Input.get_vector("left", "right", "up", "down")
-	 
+
 	if input_direction:
 		$AnimatedSprite.play("Walk")
 	else:
@@ -19,13 +19,16 @@ func get_input():
 	velocity = input_direction * speed
 
 
+
 #Process the game
 func _physics_process(_delta):
 	get_input()
 	move_and_slide(velocity)
 	#Shoots bullet when space is pressed
+	
 	if Input.is_action_just_pressed("shoot"):
-		#$AudioStreamPlayer.play()
+		if $AudioStreamPlayer.playing == false:
+			$AudioStreamPlayer.play()
 		var bullet = Bullet.instance()
 		var target = get_global_mouse_position()
 		bullet.global_position = end_of_gun.global_position
