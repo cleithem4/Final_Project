@@ -27,7 +27,7 @@
 # Feature
 
 # Created_By
-- mem1
+- Jack Huynh (programming, character/enemy interaction design)
 - mem2
 - mem3
 - mem4
