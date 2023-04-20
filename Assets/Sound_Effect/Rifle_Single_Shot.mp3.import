@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Rifle_Single_Shot.mp3-4e42d6e818928e037bbba6e883b6a3
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
