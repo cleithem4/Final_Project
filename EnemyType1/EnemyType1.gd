@@ -1,12 +1,10 @@
 extends KinematicBody2D
 
 export var speed = 350
-export var health = 5
-export var attackDmg = 1
+export var health = 20
+export var attackDmg = 3
 
 var motion = Vector2.ZERO
-
-
 
 var player = null 
 
@@ -21,8 +19,13 @@ func _physics_process(_delta):
 
 #Check if player collide or not
 func _on_Area2D_body_entered(body):
-	player = body 
+	player = body
 
 
 func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
+	
+func damage(dmg):
+	health -= dmg
+	if health <= 0:
+		queue_free()
