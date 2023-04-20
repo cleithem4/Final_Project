@@ -48,14 +48,9 @@
 
 - Graphic assets by Arwyn Tuttle 
 - Music sources 
-<<<<<<< HEAD
-=======
-  Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/mountaineer/dorisha
-License code: IEU4YBBXOEJDZSFU
 
   Music from #Uppbeat (free for Creators!):
 https://uppbeat.io/t/tatami/never-give-up
 License code: YQEBRD0ZR4PAETJT
->>>>>>> parent of 378aa06 (Update README.md)
+
 - Other sources 
