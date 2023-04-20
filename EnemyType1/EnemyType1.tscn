@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://EnemyType1/EnemyType1.gd" type="Script" id=1]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1818.PNG" type="Texture" id=2]
@@ -28,6 +28,9 @@ extents = Vector2( 16, 14 )
 [sub_resource type="CircleShape2D" id=2]
 radius = 121.017
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 16.5, 13.5 )
+
 [node name="EnemyType1" type="KinematicBody2D"]
 rotation = 6.28319
 script = ExtResource( 1 )
@@ -47,5 +50,12 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
 
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 6.49997, 0.499899 )
+shape = SubResource( 6 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
