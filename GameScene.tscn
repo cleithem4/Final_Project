@@ -9,31 +9,26 @@
 [node name="GameScene" type="Node2D"]
 script = ExtResource( 12 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -1624.0
+margin_top = -1139.0
+margin_right = 4281.0
+margin_bottom = 2648.0
+color = Color( 0.431373, 0.607843, 0.501961, 1 )
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 volume_db = -6.163
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -1608.0
-margin_top = -1144.0
-margin_right = 4297.0
-margin_bottom = 2643.0
-color = Color( 0.431373, 0.607843, 0.501961, 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1407.5, 790 )
-scale = Vector2( 3.38943, 4.16447 )
+position = Vector2( 1432, 610 )
+scale = Vector2( 3.4, 4.10526 )
 texture = ExtResource( 3 )
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2( -499, -453 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( 3819, -7, 3839, 2516, 12, 2491, -18, -273, -299, -273, -311, 2832, 4166, 2802, 4132, -270, 3817, -266, -24, -273, -12, -15 )
-
 [node name="EnemyType1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1407, 144 )
+position = Vector2( 1097, -40 )
 scale = Vector2( 2, 2 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1239, 1088 )
 scale = Vector2( 2, 2 )
