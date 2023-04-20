@@ -5,5 +5,5 @@ func _process(_delta):
 		$AudioStreamPlayer.play()
 	elif $Player == null:
 		$AudioStreamPlayer.stop()
-		get_tree().change_scene("res://UI/Main_Menu.tscn")
+		get_tree().change_scene("res://UI/Game_Over.tscn")
 	
