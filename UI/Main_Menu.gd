@@ -4,6 +4,9 @@ extends Control
 func _ready():
 	pass
 
+func _process(delta):
+	if $AudioStreamPlayer.playing == false:
+		$AudioStreamPlayer.play()
 
 
 func _on_Play_pressed():
