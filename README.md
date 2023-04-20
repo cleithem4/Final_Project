@@ -21,12 +21,14 @@
 
 
 - Fixed
+Date 4/20/23 
 + Bullet now disapper when out of range
 + Zombie now deal damage on Player
 + Bullet don't destroy itself when go back ward
 + Bullet deal damage on zombie
 + Audio for menu now auto play on press same for menu
 + Shooting now make bang sound
+                              - Jack -
 
 
 # Date_created/Date_finished
