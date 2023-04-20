@@ -12,7 +12,7 @@
 
 
 # Game_name
-- Reverse: 
+- Reverse: The last hope of our City
 --------------------------------
 # Bugs/Fixed
 - Bugs
@@ -43,20 +43,21 @@
 
 # Created_By
 - Jack Huynh (programming, character/enemy interaction design)
-- mem2
+- Shinan Huang (game idea, soundtrack, menus)
 - mem3
 - mem4
 
 
 # References
-Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/mountaineer/dorisha
-License code: IEU4YBBXOEJDZSFU
 
-Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/tatami/never-give-up
-License code: YQEBRD0ZR4PAETJT
 
 - Graphic assets by Arwyn Tuttle 
 - Music sources 
+  Music from #Uppbeat (free for Creators!):
+https://uppbeat.io/t/mountaineer/dorisha
+License code: IEU4YBBXOEJDZSFU
+
+  Music from #Uppbeat (free for Creators!):
+https://uppbeat.io/t/tatami/never-give-up
+License code: YQEBRD0ZR4PAETJT
 - Other sources 
