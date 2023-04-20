@@ -24,6 +24,7 @@ func _physics_process(_delta):
 	get_input()
 	move_and_slide(velocity)
 	if Input.is_action_just_pressed("shoot"):
+		$AudioStreamPlayer.play()
 		var bullet = Bullet.instance()
 		var target = get_global_mouse_position()
 		#bullet.rotation = get_global_mouse_position().angle_to_point(position)
