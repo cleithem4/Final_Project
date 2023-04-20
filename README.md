@@ -52,12 +52,11 @@
 
 
 - Graphic assets by Arwyn Tuttle 
-- Music sources: 
-  Music from #Uppbeat (free for Creators!):
-https://uppbeat.io/t/mountaineer/dorisha
-License code: IEU4YBBXOEJDZSFU
+
+- Music sources
 
   Music from #Uppbeat (free for Creators!):
 https://uppbeat.io/t/tatami/never-give-up
 License code: YQEBRD0ZR4PAETJT
+
 - Other sources 
