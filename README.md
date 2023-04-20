@@ -21,7 +21,6 @@
 
 
 - Fixed
-(Date 4/20/23)
 + Bullet now disapper when out of range
 + Zombie now deal damage on Player
 + Bullet don't destroy itself when go back ward
