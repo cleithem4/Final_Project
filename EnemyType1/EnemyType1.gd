@@ -18,9 +18,12 @@ func _physics_process(_delta):
 #Check if player collide or not
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("Player"):
+		player = body
 		$Area2D/Moan.play()
 		$AnimatedSprite.play("Walk")
-		player = body
+	else:
+		move_and_slide(motion)
+	
 
 func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
