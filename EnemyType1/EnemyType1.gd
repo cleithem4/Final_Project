@@ -30,7 +30,6 @@ func _on_Area2D_body_exited(body):
 func damage(dmg):
 	health -= dmg
 	if health <= 0:
-		
 		queue_free()
 
 func _on_AttackRange_body_entered(body):
