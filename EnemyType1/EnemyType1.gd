@@ -25,11 +25,11 @@ func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
 	$AnimatedSprite.play("Idle")
 
-
 #Zombie dies if health <= 0
 func damage(dmg):
 	health -= dmg
 	if health <= 0:
+		
 		queue_free()
 
 func _on_AttackRange_body_entered(body):

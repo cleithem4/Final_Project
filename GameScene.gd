@@ -1,6 +1,6 @@
 extends Node2D
 
-func _process(delta):
+func _process(_delta):
 	if $AudioStreamPlayer.playing == false:
 		$AudioStreamPlayer.play()
 	elif $Player == null:
