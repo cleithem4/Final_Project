@@ -35,6 +35,6 @@
 
 
 # References
-- Assets sources
+- graphic assets by Arwyn Tuttle
 - Music sources
 - Other sources
