@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://Assets/IMG_1832.PNG" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/FloorAndMap/IMG_1830.PNG" type="Texture" id=3]
 [ext_resource path="res://EnemyType1/EnemySpawner.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Sound_Effect/dorisha-mountaineer-main-version-23618-01-50.mp3" type="AudioStream" id=11]
 [ext_resource path="res://GameScene.gd" type="Script" id=12]
@@ -25,9 +25,40 @@ position = Vector2( 1905, 1241 )
 scale = Vector2( 3.41189, 4.06908 )
 texture = ExtResource( 3 )
 
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1224, 654 )
+position = Vector2( 65, 856 )
 scale = Vector2( 2, 2 )
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 365, -645, 397, -540, 395, -465, 429, -409, 442, -350, 536, -205, 544, -103, 668, 56, 705, 107, 713, 132, 796, 116, 934, 114, 893, 30, 881, -98, 869, -176, 824, -269, 774, -347, 708, -456, 629, -556, 637, -644 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 745, 245, 983, 220, 979, 470, 970, 561, 1009, 777, 1042, 888, 1181, 1046, 1367, 1135, 1465, 1279, 1518, 1362, 1470, 1370, 1429, 1309, 1310, 1195, 1220, 1144, 1188, 1136, 1108, 1065, 973, 956, 915, 816, 914, 967, 887, 1143, 807, 1127, 817, 903, 772, 717, 742, 544, 743, 425, 757, 337 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 798, 1193, 874, 1208, 856, 1370, 900, 1508, 917, 1585, 930, 1709, 971, 1803, 988, 1870, 945, 1861, 924, 1799, 898, 1725, 883, 1576, 845, 1475, 832, 1436, 794, 1561, 776, 1681, 761, 1803, 760, 1864, 685, 1861, 691, 1757, 709, 1602, 730, 1444, 754, 1342 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 1548, 1415, 1507, 1424, 1578, 1555, 1619, 1603, 1679, 1735, 1690, 1820, 1721, 1865, 1778, 1866, 1727, 1796, 1706, 1707, 1685, 1654, 1749, 1704, 1772, 1750, 1824, 1784, 1881, 1874, 1909, 1866, 1911, 1841, 1848, 1742, 1805, 1725, 1772, 1663, 1674, 1578, 1640, 1563, 1592, 1505 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( -22, 22 )
+polygon = PoolVector2Array( -471, 1829, 1499, 1829, 3364, 1824, 3357, -639, -502, -643, -499, 1813, -946, 1813, -919, -1055, 3667, -959, 3646, 2175, -941, 2106, -935, 1807, -503, 1812 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -10, 678, -10, 716, -134, 718, -126, 1039, 241, 1021, 234, 705, 102, 711, 98, 675, 261, 668, 272, 1060, -159, 1074, -166, 680 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 2871, 313, 2877, 351, 2771, 353, 2773, 1049, 2967, 1049, 2969, 1073, 2771, 1079, 2773, 1305, 3269, 1301, 3267, 1071, 3091, 1071, 3089, 1043, 3267, 1043, 3273, 351, 2999, 351, 2999, 319, 3293, 319, 3297, 1333, 2741, 1339, 2745, 313 )
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 2257, 278, 2261, 308, 2113, 313, 2109, 839, 2411, 838, 2412, 631, 2431, 628, 2434, 843, 2646, 843, 2643, 653, 2535, 651, 2535, 629, 2641, 629, 2639, 315, 2374, 318, 2372, 276, 2666, 281, 2675, 887, 2084, 878, 2084, 274 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 2474, -197, 2475, -162, 2117, -162, 2114, -584, 2923, -583, 2919, -163, 2592, -160, 2592, -201, 2894, -201, 2888, -551, 2362, -545, 2362, -302, 2346, -300, 2345, -548, 2148, -545, 2148, -196 )
 
 [node name="EnemySpawner" type="Node2D" parent="."]
 script = ExtResource( 4 )
