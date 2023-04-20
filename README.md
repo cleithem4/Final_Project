@@ -13,13 +13,13 @@
 
 # Game_name
 - Reverse: 
-
+--------------------------------
 # Bugs/Fixed
 - Bugs
 +   Audio play too early
 +   Player can still go out of the map (need collision to stop from moving out of range)
 
-
+---------------------------------------------------------------------------------------------
 - Fixed
 +   Bullet now disapper when out of range
 +   Zombie now deal damage on Player
@@ -27,7 +27,7 @@
 +   Bullet deal damage on zombie
 +   Audio for menu now auto play on press same for menu
 +   Shooting now make bang sound
-
+---------------------------------
 
 
 # Date_created/Date_finished
