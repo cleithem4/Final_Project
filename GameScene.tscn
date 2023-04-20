@@ -30,5 +30,22 @@ position = Vector2( 1097, -40 )
 scale = Vector2( 2, 2 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1239, 1088 )
+position = Vector2( 65, 856 )
 scale = Vector2( 2, 2 )
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 365, -645, 397, -540, 395, -465, 429, -409, 442, -350, 536, -205, 544, -103, 668, 56, 705, 107, 713, 132, 796, 116, 934, 114, 893, 30, 881, -98, 869, -176, 824, -269, 774, -347, 708, -456, 629, -556, 637, -644 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 745, 245, 983, 220, 979, 470, 970, 561, 1009, 777, 1042, 888, 1181, 1046, 1367, 1135, 1465, 1279, 1518, 1362, 1470, 1370, 1429, 1309, 1310, 1195, 1220, 1144, 1188, 1136, 1108, 1065, 973, 956, 915, 816, 914, 967, 887, 1143, 807, 1127, 817, 903, 772, 717, 742, 544, 743, 425, 757, 337 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 798, 1193, 874, 1208, 856, 1370, 900, 1508, 917, 1585, 930, 1709, 971, 1803, 988, 1870, 945, 1861, 924, 1799, 898, 1725, 883, 1576, 845, 1475, 832, 1436, 794, 1561, 776, 1681, 761, 1803, 760, 1864, 685, 1861, 691, 1757, 709, 1602, 730, 1444, 754, 1342 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 1548, 1415, 1507, 1424, 1578, 1555, 1619, 1603, 1679, 1735, 1690, 1820, 1721, 1865, 1778, 1866, 1727, 1796, 1706, 1707, 1685, 1654, 1749, 1704, 1772, 1750, 1824, 1784, 1881, 1874, 1909, 1866, 1911, 1841, 1848, 1742, 1805, 1725, 1772, 1663, 1674, 1578, 1640, 1563, 1592, 1505 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -494, 1855, 3361, 1860, 3357, -639, -502, -643, -499, 1813, -946, 1813, -919, -1055, 3667, -959, 3646, 2175, -941, 2106, -935, 1807, -503, 1812 )
