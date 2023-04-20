@@ -35,11 +35,11 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 14 )
+[sub_resource type="CircleShape2D" id=8]
+radius = 13.537
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 188.043
+radius = 478.877
 
 [sub_resource type="CircleShape2D" id=6]
 radius = 18.0278
@@ -57,7 +57,7 @@ animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 6, -2.06632e-06 )
-shape = SubResource( 1 )
+shape = SubResource( 8 )
 
 [node name="Bite" type="AudioStreamPlayer" parent="CollisionShape2D"]
 stream = ExtResource( 6 )
@@ -79,5 +79,4 @@ position = Vector2( 9, -4.01974e-05 )
 shape = SubResource( 6 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="AttackRange" to="." method="_on_AttackRange_body_entered"]
