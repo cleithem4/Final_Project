@@ -1,29 +1,33 @@
 # Final_Project 
 
 # ToDo
-- Make menu and ending game scene (win scene, lose scene, start scene, pause scene, how to play scene...etc)
-- Adding music to different UI scene
 - Adding TileMap with assets
 - Add wepons/health pack (Polymorphism weapon)
 - Create player UI 
 - Make weapons and healthpack spawn 
-- Make weapon shoot out beam or bullet
 - Adding enemy into game scene
 - Add score UI
-- Enemy deal damage within area
 - Spawn enemy (pseudo, if score < 100 spawn 2 enemy per desire time, if score >= 100 but <= 200 spawn 10 per desire time...patern)
 
 
 
 # Game_name
-- Title Game Here
+- Reverse: 
 
 # Bugs/Fixed
 - Bugs
-(input bugs if have any)
++ Audio play too early
++ Player can still go out of the map (need collision to stop from moving out of range)
+
 
 - Fixed
-(input bugs that already fixed)
++ Bullet now disapper when out of range
++ Zombie now deal damage on Player
++ Bullet don't destroy itself when go back ward
++ Bullet deal damage on zombie
++ Audio for menu now auto play on press same for menu
++ Shooting now make bang sound
+
 
 # Date_created/Date_finished
 - Mar/18/23 created
