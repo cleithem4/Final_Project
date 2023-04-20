@@ -15,6 +15,7 @@ func get_input():
 
 	if input_direction:
 		$AnimatedSprite.play("Walk")
+		
 	else:
 		$AnimatedSprite.play("Idle")
 	velocity = input_direction * speed

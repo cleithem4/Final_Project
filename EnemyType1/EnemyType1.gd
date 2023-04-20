@@ -17,9 +17,10 @@ func _physics_process(_delta):
 
 #Check if player collide or not
 func _on_Area2D_body_entered(body):
-	$Area2D/Moan.play()
-	$AnimatedSprite.play("Walk")
-	player = body
+	if body.is_in_group("Player"):
+		$Area2D/Moan.play()
+		$AnimatedSprite.play("Walk")
+		player = body
 
 func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
@@ -33,6 +34,6 @@ func damage(dmg):
 		queue_free()
 
 func _on_AttackRange_body_entered(body):
-	if body.has_method("damage"):
+	if body.has_method("damage") and body.is_in_group("Player"):
 		$CollisionShape2D/Bite.play()
 		body.damage(attackDmg)
