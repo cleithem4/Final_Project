@@ -47,3 +47,6 @@ animation = "Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="end_of_gun" type="Position2D" parent="."]
+position = Vector2( 17, 8.99994 )
