@@ -52,7 +52,7 @@
 
 
 - Graphic assets by Arwyn Tuttle 
-- Music sources 
+- Music sources: 
   Music from #Uppbeat (free for Creators!):
 https://uppbeat.io/t/mountaineer/dorisha
 License code: IEU4YBBXOEJDZSFU
