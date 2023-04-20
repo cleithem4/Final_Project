@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Font/RussoOne-Regular.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/Sound_Effect/dorisha-mountaineer-main-version-23618-01-50.mp3" type="AudioStream" id=2]
 [ext_resource path="res://UI/Main_Menu.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Sound_Effect/Click_on_Button_Sound.mp3" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -20,9 +20,6 @@ font_data = ExtResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 10.0
@@ -58,6 +55,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Play"
 icon_align = 1
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Play"]
+stream = ExtResource( 4 )
+
 [node name="Quit" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -71,5 +71,10 @@ custom_fonts/font = SubResource( 3 )
 text = "Quit"
 icon_align = 1
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Quit"]
+stream = ExtResource( 4 )
+
+[connection signal="button_down" from="Play" to="." method="_on_Play_button_down"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="button_down" from="Quit" to="." method="_on_Quit_button_down"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

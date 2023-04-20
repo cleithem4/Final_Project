@@ -1,10 +1,12 @@
 extends KinematicBody2D
 
 export var speed := 400
-export var health = 15
+export var health = 30
 
 var velocity = Vector2()
+
 onready var Bullet = load("res://Bullet/Bullet.tscn")
+
 onready var end_of_gun = $end_of_gun
 #Get user input for player movement
 func get_input():
@@ -34,9 +36,9 @@ func _physics_process(_delta):
 	get_input()
 	move_and_slide(velocity)
 	shoot() #Get shoot function
-	
-func damage(dmg):
-	health -= dmg
+
+#Player die if health <= 0
+func damage(damage):
+	health -= damage
 	if health <= 0:
 		queue_free()
-	

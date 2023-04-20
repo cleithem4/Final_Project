@@ -34,7 +34,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 9.5, 14 )
+extents = Vector2( 12, 15 )
 
 [node name="Player" type="KinematicBody2D"]
 rotation = 1.5708
@@ -46,6 +46,7 @@ frames = SubResource( 3 )
 animation = "Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -9.0718e-06, -2.99999 )
 shape = SubResource( 1 )
 
 [node name="end_of_gun" type="Position2D" parent="."]

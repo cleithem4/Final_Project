@@ -1,11 +1,10 @@
 extends KinematicBody2D
 
 export var speed = 350
-export var health = 20
-export var attackDmg = 3
+export var health = 10
 
 var motion = Vector2.ZERO
-
+var attackDmg = 5
 var player = null 
 
 #Process the game 
@@ -25,7 +24,14 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	player = null #set player null so it stop chasing it's target
 	
+
+#Zombie dies if health <= 0
 func damage(dmg):
 	health -= dmg
 	if health <= 0:
 		queue_free()
+
+
+func _on_AttackRange_body_entered(body):
+	if body.has_method("damage"):
+		body.damage(attackDmg)
