@@ -3,13 +3,22 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 1000.0
-var damage = 1
+var damage = 2
 
 func _physics_process(delta):
 	velocity = Vector2(0, speed).rotated(rotation)
 	position += velocity * delta
-
+	
+	
 
 func _on_Area2D_body_entered(body):
 	if body.has_method("damage"):
 		body.damage(damage)
+		#Queue free so bullet disappear
+		queue_free()
+
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	##Queue free bullet avoid crashing
+	queue_free()

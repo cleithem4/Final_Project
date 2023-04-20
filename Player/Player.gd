@@ -1,8 +1,7 @@
 extends KinematicBody2D
 
 export var speed := 400
-export var health = 3
-export var attackDmg = 1
+export var health = 15
 
 var velocity = Vector2()
 onready var Bullet = load("res://Bullet/Bullet.tscn")
@@ -18,6 +17,8 @@ func get_input():
 		$AnimatedSprite.play("Idle")
 	velocity = input_direction * speed
 	
+
+func shoot():
 	if Input.is_action_just_pressed("shoot"):
 		var bullet = Bullet.instance()
 		var target = get_global_mouse_position()
@@ -26,15 +27,16 @@ func get_input():
 		bullet.global_position = end_of_gun.global_position
 		bullet.rotation = rotation + 300
 		get_parent().add_child(bullet)
-
-
+		
 
 #Process the game
 func _physics_process(_delta):
-	if Input.is_action_pressed("shoot"):
-		$AudioStreamPlayer.play()
 	get_input()
 	move_and_slide(velocity)
+	shoot() #Get shoot function
 	
-
-
+func damage(dmg):
+	health -= dmg
+	if health <= 0:
+		queue_free()
+	
