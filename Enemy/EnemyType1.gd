@@ -15,6 +15,8 @@ func _physics_process(_delta):
 	motion = Vector2.ZERO
 	if player:
 		motion = position.direction_to(player.position) * speed 
+		look_at(player.position)
+		$AnimatedSprite.play("Walk")
 	motion = move_and_slide(motion)
 
 #Check if player collide or not
