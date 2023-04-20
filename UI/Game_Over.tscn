@@ -26,6 +26,7 @@ script = ExtResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
+autoplay = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 10.0
