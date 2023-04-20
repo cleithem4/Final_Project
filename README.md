@@ -34,6 +34,8 @@
 
 
 # References
-- graphic assets by Arwyn Tuttle
-- Music sources
-- Other sources
+(insert link where you get the asset, if you make it yourself then just put in your name)
+
+- Graphic assets by Arwyn Tuttle 
+- Music sources 
+- Other sources 
