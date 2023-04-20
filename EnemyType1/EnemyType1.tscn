@@ -26,7 +26,7 @@ animations = [ {
 extents = Vector2( 16, 14 )
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 73.2462
+radius = 121.017
 
 [node name="EnemyType1" type="KinematicBody2D"]
 rotation = 6.28319
