@@ -15,6 +15,7 @@ autoplay = true
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+<<<<<<< Updated upstream
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
@@ -27,3 +28,7 @@ margin_bottom = 20.0
 [node name="ColorRect2" type="ColorRect" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
+=======
+margin_right = 506.0
+margin_bottom = 357.0
+>>>>>>> Stashed changes
