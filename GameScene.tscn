@@ -169,6 +169,12 @@
 
 [node name="GameScene" type="Node2D"]
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+build_mode = 1
+polygon = PoolVector2Array( -62, -200, -55, 2600, 34, 2498, 34, -105, 4097, -86, 4091, 2505, 34, 2498, -42, 2593, 4193, 2587, 4186, -200 )
+
 [node name="Background" type="ColorRect" parent="."]
 margin_left = -1523.0
 margin_top = -955.0
