@@ -42,6 +42,10 @@ font_data = ExtResource( 1 )
 [node name="Tutorial" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
 script = ExtResource( 8 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -54,7 +58,7 @@ margin_right = 1500.0
 margin_bottom = 14.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Your are deployed to transfer zombies back to human with antigen gun. "
+text = "Your are deployed to transfer zombies back to human with an antigen gun. "
 
 [node name="Label2" type="Label" parent="."]
 margin_top = 100.0
@@ -151,8 +155,8 @@ text = "Space key controls your fire"
 [node name="Skip" type="Button" parent="."]
 margin_left = 1000.0
 margin_top = 650.0
-margin_right = 1038.0
-margin_bottom = 670.0
+margin_right = 1300.0
+margin_bottom = 720.0
 custom_fonts/font = SubResource( 9 )
 text = "Skip"
 
