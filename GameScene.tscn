@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://EnemyType1/EnemyType1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0024_Layer-25.png" type="Texture" id=8]
 [ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0026_Layer-27.png" type="Texture" id=9]
 [ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0027_Layer-28.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Sound_Effect/dorisha-mountaineer-main-version-23618-01-50.mp3" type="AudioStream" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "walls_0024_Layer-25.png 0"
@@ -199,7 +198,3 @@ current = true
 position = Vector2( 2256, 547 )
 rotation = 4.46638e-06
 scale = Vector2( 2, 2 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-autoplay = true

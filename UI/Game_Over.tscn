@@ -2,10 +2,9 @@
 
 [ext_resource path="res://Assets/Sound_Effect/never-give-up-tatami-main-version-20276-02-06.mp3" type="AudioStream" id=1]
 
-[node name="GameOver" type="Control"]
+[node name="Game_Over" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
-autoplay = true
