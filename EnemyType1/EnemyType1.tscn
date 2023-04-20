@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://EnemyType1/EnemyType1.gd" type="Script" id=1]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1818.PNG" type="Texture" id=2]
 [ext_resource path="res://Assets/CharacterSprite/IMG_1817.PNG" type="Texture" id=3]
 [ext_resource path="res://Assets/Sound_Effect/Zombie_Moan_Sound.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Sound_Effect/Zombie_Bite_Sound.mp3" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
@@ -29,7 +30,10 @@ extents = Vector2( 16, 14 )
 [sub_resource type="CircleShape2D" id=2]
 radius = 121.017
 
-[node name="EnemyType1" type="KinematicBody2D"]
+[sub_resource type="CircleShape2D" id=6]
+radius = 18.0278
+
+[node name="EnemyType1" type="KinematicBody2D" groups=["Enemy"]]
 rotation = 6.28319
 script = ExtResource( 1 )
 speed = 300
@@ -51,5 +55,15 @@ stream = ExtResource( 4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
 
+[node name="AttackRange" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
+position = Vector2( 9, -4.01974e-05 )
+shape = SubResource( 6 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AttackRange"]
+stream = ExtResource( 5 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="AttackRange" to="." method="_on_AttackRange_body_entered"]
