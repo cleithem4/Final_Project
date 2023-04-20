@@ -16,17 +16,17 @@
 
 # Bugs/Fixed
 - Bugs
-+ Audio play too early
-+ Player can still go out of the map (need collision to stop from moving out of range)
++   Audio play too early
++   Player can still go out of the map (need collision to stop from moving out of range)
 
 
 - Fixed
-+ Bullet now disapper when out of range
-+ Zombie now deal damage on Player
-+ Bullet don't destroy itself when go back ward
-+ Bullet deal damage on zombie
-+ Audio for menu now auto play on press same for menu
-+ Shooting now make bang sound
++   Bullet now disapper when out of range
++   Zombie now deal damage on Player
++   Bullet don't destroy itself when go back ward
++   Bullet deal damage on zombie
++   Audio for menu now auto play on press same for menu
++   Shooting now make bang sound
 
 
 
