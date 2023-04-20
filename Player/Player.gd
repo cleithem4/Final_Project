@@ -19,19 +19,20 @@ func get_input():
 	velocity = input_direction * speed
 	
 	if Input.is_action_just_pressed("shoot"):
-		if $AudioStreamPlayer.playing == false:
-			$AudioStreamPlayer.play()
-			
 		var bullet = Bullet.instance()
 		var target = get_global_mouse_position()
-		#bullet.rotation = get_global_mouse_position().angle_to_point(position)
+		bullet.rotation = get_global_mouse_position().angle_to_point(position)
+		bullet.rotation = get_global_mouse_position().angle_to_point(position)
 		bullet.global_position = end_of_gun.global_position
 		bullet.rotation = rotation + 300
 		get_parent().add_child(bullet)
 
 
+
 #Process the game
 func _physics_process(_delta):
+	if Input.is_action_pressed("shoot"):
+		$AudioStreamPlayer.play()
 	get_input()
 	move_and_slide(velocity)
 	
