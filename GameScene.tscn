@@ -1,30 +1,239 @@
+<<<<<<< HEAD
 [gd_scene load_steps=6 format=2]
+=======
+<<<<<<< HEAD
+[gd_scene load_steps=13 format=2]
+=======
+[gd_scene load_steps=4 format=2]
+>>>>>>> bb42c6c0ae4b51cd6334ee79320697e0dea65247
+>>>>>>> 301dd0b275c68f2e046736976928e9ce9b386fa8
 
 [ext_resource path="res://EnemyType1/EnemyType1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/FloorAndMap/IMG_1830.PNG" type="Texture" id=3]
+<<<<<<< HEAD
 [ext_resource path="res://Assets/Sound_Effect/dorisha-mountaineer-main-version-23618-01-50.mp3" type="AudioStream" id=11]
 [ext_resource path="res://GameScene.gd" type="Script" id=12]
+=======
+<<<<<<< HEAD
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0029_Layer-30.png" type="Texture" id=4]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0028_Layer-29.png" type="Texture" id=5]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0025_Layer-26.png" type="Texture" id=6]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0021_Layer-22.png" type="Texture" id=7]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0024_Layer-25.png" type="Texture" id=8]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0026_Layer-27.png" type="Texture" id=9]
+[ext_resource path="res://Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/Tiles/PNG/Walls/walls_0027_Layer-28.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Sound_Effect/never-give-up-tatami-main-version-20276-02-06.mp3" type="AudioStream" id=11]
+
+[sub_resource type="TileSet" id=1]
+0/name = "walls_0024_Layer-25.png 0"
+0/texture = ExtResource( 8 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 96, 352 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "walls_0024_Layer-25.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 96, 256, 256, 96 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "walls_0025_Layer-26.png 2"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 352, 96 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "walls_0026_Layer-27.png 3"
+3/texture = ExtResource( 9 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 352, 96 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "walls_0027_Layer-28.png 4"
+4/texture = ExtResource( 10 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 352, 96 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "walls_0027_Layer-28.png 5"
+5/texture = ExtResource( 10 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 256, 96, 96, 256 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "walls_0028_Layer-29.png 6"
+6/texture = ExtResource( 5 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 96, 352 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "walls_0029_Layer-30.png 7"
+7/texture = ExtResource( 4 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 256, 0, 96, 352 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "walls_0029_Layer-30.png 8"
+8/texture = ExtResource( 4 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 256, 256, 96 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "walls_0021_Layer-22.png 9"
+9/texture = ExtResource( 7 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 96, 352 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "walls_0021_Layer-22.png 10"
+10/texture = ExtResource( 7 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 96, 0, 256, 96 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+>>>>>>> 301dd0b275c68f2e046736976928e9ce9b386fa8
 
 [node name="GameScene" type="Node2D"]
 script = ExtResource( 12 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1407.5, 790 )
-scale = Vector2( 3.38943, 4.16447 )
+[node name="Background" type="ColorRect" parent="."]
+margin_left = -1523.0
+margin_top = -955.0
+margin_right = 5789.0
+margin_bottom = 3558.0
+color = Color( 0.376471, 0.458824, 0.380392, 1 )
+
+[node name="MapBackground" type="Sprite" parent="Background"]
+position = Vector2( 3604.25, 2173.75 )
+scale = Vector2( 3.65947, 4.45477 )
 texture = ExtResource( 3 )
 
+[node name="TileMap" type="TileMap" parent="Background"]
+position = Vector2( 1523, 955 )
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -131073, 9, 0, -196608, 10, 0, -196605, 3, 0, -196602, 3, 0, -196599, 3, 0, -196596, 3, 0, -196591, 3, 0, -196590, 3, 0, -196589, 3, 0, -196588, 10, 0, -196587, 3, 0, -196584, 3, 0, -196579, 3, 0, -196576, 3, 0, -196574, 3, 0, -196571, 3, 0, -196569, 3, 0, -196566, 3, 0, -196563, 3, 0, -196560, 3, 0, -196558, 10, 0, -196557, 10, 0, -196556, 10, 0, -196553, 3, 0, -196548, 4, 0, -131008, 5, 0, 65600, 5, 0, 196607, 6, 0, 196672, 5, 0, 327679, 6, 0, 458751, 6, 0, 393280, 5, 0, 524352, 5, 0, 720895, 6, 0, 720960, 5, 0, 917503, 6, 0, 852032, 5, 0, 1048575, 6, 0, 1048640, 5, 0, 1179647, 6, 0, 1245248, 5, 0, 1507327, 6, 0, 1441856, 5, 0, 1704000, 5, 0, 1835007, 6, 0, 1900608, 5, 0, 2031680, 5, 0, 2162687, 6, 0, 2162752, 5, 0, 2359295, 0, 0, 2293824, 7, 0, 2555904, 8, 0, 2555905, 8, 0, 2555908, 8, 0, 2555910, 8, 0, 2555913, 8, 0, 2555916, 8, 0, 2555919, 8, 0, 2555921, 8, 0, 2555923, 8, 0, 2555926, 8, 0, 2555929, 8, 0, 2555933, 8, 0, 2555936, 8, 0, 2555940, 8, 0, 2555943, 8, 0, 2555947, 8, 0, 2555949, 8, 0, 2555953, 8, 0, 2555955, 8, 0, 2555958, 8, 0, 2555961, 8, 0, 2555964, 8, 0 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1092, 475 )
+position = Vector2( 1663, 312 )
 scale = Vector2( 2, 2 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 
 [node name="EnemyType1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1407, 144 )
+position = Vector2( 2256, 547 )
+rotation = 4.46638e-06
 scale = Vector2( 2, 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+<<<<<<< HEAD
 volume_db = -10.015
+=======
+autoplay = true
+=======
+
+[node name="GameScene" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1035, 674 )
+scale = Vector2( 2.2185, 2.61513 )
+texture = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 910, 502 )
+
+[node name="EnemyType1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1144, 563 )
+>>>>>>> bb42c6c0ae4b51cd6334ee79320697e0dea65247
+>>>>>>> 301dd0b275c68f2e046736976928e9ce9b386fa8
