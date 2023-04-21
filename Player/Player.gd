@@ -44,5 +44,6 @@ func _physics_process(_delta):
 #Player die if health <= 0
 func damage(damage):
 	health -= damage
+	Global.health = health
 	if health <= 0:
 		queue_free()
