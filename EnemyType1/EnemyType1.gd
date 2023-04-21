@@ -4,7 +4,7 @@ export var speed = 350
 export var health = 10
 
 var motion = Vector2.ZERO
-var attackDmg = 5
+var attackDmg = 10
 var player = null 
 
 #Process the game 
@@ -30,6 +30,7 @@ func _on_Area2D_body_entered(body):
 func damage(dmg):
 	health -= dmg
 	if health <= 0:
+		Global.score += 50
 		queue_free()
 
 func _on_AttackRange_body_entered(body):
