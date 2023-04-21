@@ -17,8 +17,8 @@
 - World enviroment has multiple effects
 
 # Created_By
-- Jack Huynh (programming, character/enemy interaction design)
-- Shinan Huang (game idea, soundtrack, menus)
+- Jack Huynh (Programming, character/enemy interaction design)
+- Shinan Huang (Game idea, soundtrack, menus)
 - Cody Leithem(Programming)
 - mem4
 
