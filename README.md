@@ -20,7 +20,7 @@
 - Jack Huynh (Programming, character/enemy interaction design)
 - Shinan Huang (Game idea, soundtrack, menus)
 - Cody Leithem(Programming)
-- mem4
+- Arwyn Tuttle (asset design)
 
 
 # References
