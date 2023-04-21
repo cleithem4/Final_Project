@@ -19,7 +19,7 @@
 # Created_By
 - Jack Huynh (programming, character/enemy interaction design)
 - Shinan Huang (game idea, soundtrack, menus)
-- mem3
+- Cody Leithem(Programming)
 - mem4
 
 
