@@ -5,11 +5,15 @@ var velocity = Vector2.ZERO
 var speed = 1000.0
 var damage = 2
 
+onready var smoketrail = $Smoketrail
+
 func _physics_process(delta):
 	velocity = Vector2(0, speed).rotated(rotation)
 	position += velocity * delta
-
+	smoketrail.add_point(global_position)
+	
 func _on_Area2D_body_entered(body):
+	smoketrail.stop()
 	if body.has_method("damage"):
 		body.damage(damage)
 		#Queue free so bullet disappear
